@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Newsoft</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,600|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                SOURAV US
+              </span>
+              </a>
+              <img class="profile"src="images/my.jpg">
+
+            <div class="navbar-collapse" id="">
+              <div
+                class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center mt-3"
+              >
+                <form class="form-inline mb-3 mb-lg-0 ">
+                  <button
+                    class="btn  my-sm-0 nav_search-btn"
+                    type="submit"
+                  ></button>
+                </form>
+                <ul class="navbar-nav  mr-5">
+                  <li class="nav-item mr-5">
+                    <a class="nav-link" href="service.html">
+                      <span>Login</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="feature.html">Features</a>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class=" slider_section position-relative">
+        <div class="container">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="slider_item-box">
+                  <div class="slider_item-container">
+                    <div class="slider_item-detail">
+                      <h1>
+                        PROVIDES TO MAKE BETTER DESIGNING
+                      </h1>
+                      <p>
+                       MY works are as follows
+                      </p>
+                      <div>
+                       <button  class="buts" onclick="display()">Link</button>
+                      </div>
+                    </div>
+                    <div class="slider_item-imgbox">
+                    <img class="netflix" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdd7pk4Ho2RwMILnQkopLjW8xhCS4SePwgw&usqp=CAU"> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slider_item-box">
+                  <div class="slider_item-container">
+                    <div class="slider_item-detail">
+                      <h1>
+                        PROVIDES TO MAKE BETTER DESIGING
+                      </h1>
+                      <p>
+                        MY works are as follows
+                      </p>
+                      <div>
+                        <button class="buts" onclick="displaytwo()">Link</button>
+                      </div>
+                    </div>
+                    <div class="slider_item-imgbox">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9GidwainpbZ2Obdngp8VqED08hnUuBKfFOg&usqp=CAU">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slider_item-box">
+                  <div class="slider_item-container">
+                    <div class="slider_item-detail">
+                      <h1>
+                        PROVIDES TO MAKE BETTER DESIGINIG
+                      </h1>
+                      <p>
+                        MY works are as follows
+                      </p>
+                      <div>
+                        <button  class="buts" onclick="displaythree()">Link</button>
+                      </div>
+                    </div>
+                    <div class="slider_item-imgbox">
+                      <img src="data:image/jpeg;base64,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">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="sr-only">Next</span>
+        </a>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+      <div class="container">
+        <h2 class="text-uppercase">
+          WORK ETHICS
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="about_card-container layout_padding2-top">
+          <div class="about_card">
+            <div class="about-detail">
+              <div class="about_img-container">
+                <div class="about_img-box">
+                  <img src="images/work1.png" alt="" />
+                </div>
+              </div>
+              <div class="card_detail-ox">
+                <h4>
+                  FULLY RESPONSIVE
+                </h4>
+                <p>
+                  work will be fully responsive.The work will be done in the scheduled time limit and take more responsibility to do with my limitation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about_card">
+            <div class="about-detail">
+              <div class="about_img-container">
+                <div class="about_img-box">
+                  <img src="images/work2.png" alt="" />
+                </div>
+              </div>
+              <div class="card_detail-ox">
+                <h4>
+                  WELL DOCUMENTED
+                </h4>
+                <p>
+                  Following the correct instructions and documentation will be complete on the time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about_card">
+            <div class="about-detail">
+              <div class="about_img-container">
+                <div class="about_img-box">
+                  <img src="images/work3.png" alt="" />
+                </div>
+              </div>
+              <div class="card_detail-ox">
+                <h4>
+                  EASY TO USE
+                </h4>
+                <p>
+                  Gives good use and makes others understand very easily
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- who section -->
+    <section class="who_section">
+      <div class="container who_container">
+        <div class="who_img-box">
+          <img src="images/pc.jpg" alt="" />
+        </div>
+        <div class="who_deail-box">
+          <h2>
+            Who is Me?
+          </h2>
+          <p>
+            Hi I'm Sourav US basically I'm a web designer and developing webpages and providing to make better designing.If you want to get any webpage or something you have to come here and choose and I try to make my webpages are more advanced.So if you have to anydoubt please contact me.Thank you
+          </p>
+          <div>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end who section -->
+
+    <!-- feature section  -->
+    <section class="feature_section layout_padding">
+      <div class="container">
+        <h2 class="text-uppercase">
+          Disinging Features
+        </h2>
+      </div>
+      <div class="">
+        <div class="feature_card-container layout_padding2">
+          <div class="feature_card">
+            <div class="feature_img-container">
+              <div class="feature_img-box">
+                <img src="images/f1.png" alt="" />
+              </div>
+            </div>
+            <div class="feature_detail-box">
+              <h4>
+                CLEAN CODES
+              </h4>
+              <p>
+               
+              </p>
+            </div>
+          </div>
+          <div class="feature_card">
+            <div class="feature_img-container">
+              <div class="feature_img-box">
+                <img src="images/f2.png" alt="" />
+              </div>
+            </div>
+            <div class="feature_detail-box">
+              <h4>
+                PERFECT SHOWCASE
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+          <div class="feature_card">
+            <div class="feature_img-container">
+              <div class="feature_img-box">
+                <img src="images/f3.png" alt="" />
+              </div>
+            </div>
+            <div class="feature_detail-box">
+              <h4>
+                FREE FONT
+              </h4>
+              <p>
+               
+              </p>
+            </div>
+          </div>
+          <div class="feature_card">
+            <div class="feature_img-container">
+              <div class="feature_img-box">
+                <img src="images/f4.png" alt="" />
+              </div>
+            </div>
+            <div class="feature_detail-box">
+              <h4>
+                HIGH RESOLUTION
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end feature section -->
+
+    <!-- contact section -->
+    <section class="contact_section ">
+      <div class="container d-flex justify-content-center">
+        <h2 class="text-uppercase">
+          Get in touch
+        </h2>
+      </div>
+      <div class="container-fluid layout_padding-top">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-md-10 offset-md-2">
+              <div class="contact_img-box">
+                <img src="images/form-img.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 form_bg px-0">
+            <div class="col-md-10 px-0">
+              <form action="">
+                <div class="contact_form-container">
+                  <div>
+                    <div>
+                      <input type="text" placeholder=" Name" />
+                    </div>
+                    <div>
+                      <input type="email" placeholder="  Email" />
+                    </div>
+
+                    <div>
+                      <input type="text" placeholder=" Phone Number" />
+                    </div>
+
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Message"
+                        class="message_input"
+                      />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-end">
+                      <button type="submit">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
+
+    <!-- info section -->
+    <section class="info_section layout_padding">
+      <div class="container info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                
+                <h5>
+                  The Services
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      About Me
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      About services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      About Departments
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contact Me
+                    </a>
+                  </li>
+                </ul>
+               
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+              
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline"
+        >
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="images/twitter.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin1.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram1.png" alt="" />
+            </a>
+          </div>
+          <div class="form_container mt-5">
+            <form action="">
+              <label for="subscribeMail">
+               
+              </label>
+              <input
+                type="email"
+                placeholder="Enter Your email"
+                id="subscribeMail"
+              />
+              <button type="submit">
+                Sign In
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        &copy; 2023 All Rights Reserved. Design by
+        <a href="https://html.design/">Sourav US</a>
+      </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document
+          .querySelector(".custom_menu-btn")
+          .classList.toggle("menu_btn-style");
+      }
+      function display(){
+        window.location.href="https://netflix-sourav.netlify.app/";
+      }
+      function displaytwo(){
+        window.location.href="https://starbucks-sourav.netlify.app/";
+      }
+      function displaythree(){
+        window.location.href="http://127.0.0.1:5500/KFC.html";
+      }
+    </script>
+  </body>
+</html>
